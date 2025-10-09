@@ -1,0 +1,64 @@
+[versions]
+blek = "2.0.0-alpha08"
+ble = "2.11.0"
+dfu = "2.9.0"
+log = "2.5.0"
+data = "0.4.0"
+wifi = "1.3.0"
+mcumgr = "2.7.3"
+scanner = "1.6.0"
+common = "2.5.4"
+memfault = "2.0.2"
+
+[libraries]
+# Android BLE Scanner Library (legacy)
+compat-scanner = { group = "no.nordicsemi.android.support.v18", name = "scanner", version.ref = "scanner" }
+
+# Android BLE Library (legacy)
+ble = { group = "no.nordicsemi.android", name = "ble", version.ref = "ble" }
+ble-ktx = { group = "no.nordicsemi.android", name = "ble-ktx", version.ref = "ble" }
+ble-common = { group = "no.nordicsemi.android", name = "ble-common", version.ref = "ble" }
+
+# Kotlin BLE Library
+blek-client-core = { group = "no.nordicsemi.kotlin.ble", name = "client-core", version.ref = "blek" }
+blek-client-core-android = { group = "no.nordicsemi.kotlin.ble", name = "client-core-android", version.ref = "blek" }
+blek-client-android = { group = "no.nordicsemi.kotlin.ble", name = "client-android", version.ref = "blek" }
+blek-client-android-mock = { group = "no.nordicsemi.kotlin.ble", name = "client-android-mock", version.ref = "blek" }
+blek-advertiser-core = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-core", version.ref = "blek" }
+blek-advertiser-core-android = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-core-android", version.ref = "blek" }
+blek-advertiser-android = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-android", version.ref = "blek" }
+blek-advertiser-android-mock = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-android-mock", version.ref = "blek" }
+
+# Legacy and Secure DFU for nRF5 SDK
+dfu = { group = "no.nordicsemi.android", name = "dfu", version.ref = "dfu" }
+
+# MCUmgr and DFU for nRF Connect SDK
+mcumgr-core = { group = "no.nordicsemi.android", name = "mcumgr-core", version.ref = "mcumgr" }
+mcumgr-ble = { group = "no.nordicsemi.android", name = "mcumgr-ble", version.ref = "mcumgr" }
+
+# Logging
+log = { group = "no.nordicsemi.android", name = "log", version.ref = "log" }
+log-timber = { group = "no.nordicsemi.android", name = "log-timber", version.ref = "log" }
+kotlin-data = { group = "no.nordicsemi.kotlin", name = "data", version.ref = "data" }
+
+# Nordic Common Libraries
+core = { group = "no.nordicsemi.android.common", name = "core", version.ref = "common" }
+ui = { group = "no.nordicsemi.android.common", name = "ui", version.ref = "common" }
+theme = { group = "no.nordicsemi.android.common", name = "theme", version.ref = "common" }
+scanner-ble = { group = "no.nordicsemi.android.common", name = "scanner-ble", version.ref = "common" }
+analytics = { group = "no.nordicsemi.android.common", name = "analytics", version.ref = "common" }
+navigation = { group = "no.nordicsemi.android.common", name = "navigation", version.ref = "common" }
+logger = { group = "no.nordicsemi.android.common", name = "logger", version.ref = "common" }
+permissions-nfc = { group = "no.nordicsemi.android.common", name = "permissions-nfc", version.ref = "common" }
+permissions-ble = { group = "no.nordicsemi.android.common", name = "permissions-ble", version.ref = "common" }
+permissions-internet = { group = "no.nordicsemi.android.common", name = "permissions-internet", version.ref = "common" }
+permissions-wifi = { group = "no.nordicsemi.android.common", name = "permissions-wifi", version.ref = "common" }
+permissions-notification = { group = "no.nordicsemi.android.common", name = "permissions-notification", version.ref = "common" }
+wifi-ble = { group = "no.nordicsemi.android.wifi", name = "provisioning-ble", version.ref = "wifi" }
+wifi-softap = { group = "no.nordicsemi.android.wifi", name = "provisioning-softap", version.ref = "wifi" }
+wifi-nfc = { group = "no.nordicsemi.android.wifi", name = "provisioning-nfc", version.ref = "wifi" }
+
+# Memfault library (deprecated, moved to "observability")
+memfault = { group = "no.nordicsemi.android", name = "memfault", version.ref = "memfault" }
+
+[plugins]
