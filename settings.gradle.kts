@@ -1,14 +1,6 @@
 pluginManagement {
     repositories {
-        mavenCentral()
-        exclusiveContent {
-            forRepository { gradlePluginPortal() }
-            filter {
-                includeGroupAndSubgroups("com.gradle")
-                includeGroupAndSubgroups("no.nordicsemi")
-                includeGroupAndSubgroups("org.jetbrains")
-            }
-        }
+        // No plugins used.
     }
 }
 dependencyResolutionManagement {
