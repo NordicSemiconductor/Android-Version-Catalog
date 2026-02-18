@@ -1,13 +1,13 @@
 [versions]
-blek = "2.0.0-alpha12"
+blek = "2.0.0-alpha15"
 ble = "2.11.0"
-dfu = "2.10.1"
+dfu = "2.11.0"
 log = "2.5.0"
 data = "0.5.0"
 wifi = "1.3.0"
-mcumgr = "2.7.4"
+mcumgr = "2.8.0"
 scanner = "1.6.0"
-common = "2.8.2"
+common = "2.9.1"
 memfault = "2.0.2"
 
 [libraries]
@@ -28,6 +28,9 @@ blek-advertiser-core = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-
 blek-advertiser-core-android = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-core-android", version.ref = "blek" }
 blek-advertiser-android = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-android", version.ref = "blek" }
 blek-advertiser-android-mock = { group = "no.nordicsemi.kotlin.ble", name = "advertiser-android-mock", version.ref = "blek" }
+blek-environment-android = { group = "no.nordicsemi.kotlin.ble", name = "environment-android", version.ref = "blek" }
+blek-environment-android-mock = { group = "no.nordicsemi.kotlin.ble", name = "environment-android-mock", version.ref = "blek" }
+blek-environment-android-compose = { group = "no.nordicsemi.kotlin.ble", name = "environment-android-compose", version.ref = "blek" }
 
 # Legacy and Secure DFU for nRF5 SDK
 dfu = { group = "no.nordicsemi.android", name = "dfu", version.ref = "dfu" }
